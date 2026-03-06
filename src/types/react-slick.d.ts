@@ -24,5 +24,11 @@ declare module "react-slick" {
     [key: string]: unknown;
   }
 
-  export default class Slider extends React.Component<Settings> {}
+  export default class Slider extends React.Component<Settings> {
+    slickNext(): void;
+    slickPrev(): void;
+    slickGoTo(slideNumber: number, dontAnimate?: boolean): void;
+    slickPause(): void;
+    slickPlay(): void;
+  }
 }
